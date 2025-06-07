@@ -1,0 +1,242 @@
+{
+  "Header": {
+    "docs": "Docs",
+    "chat": "Chat"
+  },
+  "HomePage": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "LocaleSwitch": {
+    "locale": "{locale, select, zh {中文} en {English} other {Unknown}}"
+  },
+  "Hero": {
+    "getStarted": "Ask",
+    "toPlayground": "Explore",
+    "announcement": "😃 Enjoy yourself",
+    "title": "Dish Comment AI",
+    "description": "To free food needs to be reviewed? Use me to generate it"
+  },
+  "LoginCard": {
+    "welcome": "Welcome",
+    "welcomeDesc": "Please select a login method to continue",
+    "google": "Login with Google",
+    "github": "Login with Github",
+    "agree": "Login means you agree to our terms of service and privacy policy"
+  },
+  "footer": {
+    "slogan": "Build your SaaS application with the latest technology",
+    "copyright": "© {year} Easy Saas Next All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "docs": "Docs",
+    "about": "About",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "terms": "Terms",
+    "legal": "Legal",
+    "license": "License",
+    "security": "Security",
+    "product": "Product",
+    "allRightsReserved": "All rights reserved"
+  },
+  "faq": {
+    "title": "FAQ",
+    "description": "Below are some answers to common questions",
+    "questions": [
+      {
+        "question": "What is Easy SaaS Next?",
+        "answer": "Easy SaaS Next is a SaaS application framework based on Nextjs that helps developers quickly build SaaS applications."
+      },
+      {
+        "question": "Can I get a refund after purchase?",
+        "answer": "Since Easy SaaS Next is a virtual product, refunds are not supported. Please purchase carefully."
+      },
+      {
+        "question": "Will there be technical support after purchase?",
+        "answer": "Easy SaaS Next provides technical support. You can contact us via email or join the paid group for technical support. However, due to limited resources, we cannot provide free one-on-one technical support. Thank you for your understanding."
+      },
+      {
+        "question": "Is Easy SaaS Next suitable for me?",
+        "answer": "If you don't have programming basics, we recommend learning some prerequisite knowledge (which can be found in the documentation) or contacting us directly for customization. If you have sufficient programming foundation, Easy SaaS Next can help you quickly build your SaaS application."
+      },
+      {
+        "question": "Are the video tutorials free?",
+        "answer": "Absolutely! The video tutorials are free. You can learn how to use Easy SaaS Next through the video tutorials and practice based on the content in the tutorials to build your SaaS application. If you find the video tutorials helpful or want to use Easy SaaS Next's source code directly to build your SaaS application, you can purchase the paid version."
+      },
+      {
+        "question": "What is the difference between the video tutorials and the paid version?",
+        "answer": "The video tutorials are free, and some key code explanations and practices are included, but the complete source code is not included, so you cannot get the complete source code from the tutorials. The paid version includes the complete source code, and you can get the complete source code and technical support."
+      },
+      {
+        "question": "Will the template be updated continuously?",
+        "answer": "Yes, I will continue to update the template and provide technical support."
+      },
+      {
+        "question": "Can I use AI to modify this template?",
+        "answer": "Yes, because the technologies used in Easy SaaS Next are open source and AI-friendly, you can fully use AI to modify this template."
+      }
+    ]
+  },
+  "blog": {
+    "toc": "Table of Contents",
+    "secondUnit": "s",
+    "minuteUnit": "m",
+    "author": "Author",
+    "date": "Date",
+    "all": "All",
+    "title": "Blogs"
+  },
+  "Admin": {
+    "title": "Admin",
+    "UsersManagement": {
+      "title": "Users Management",
+      "columns": {
+        "name": "Username",
+        "email": "Email",
+        "emailVerified": "Email Verification",
+        "createdAt": "Created At",
+        "verified": "Verified",
+        "unverified": "Unverified",
+        "banUser": "Ban User",
+        "unBanUser": "UnBan User",
+        "admin": "Admin",
+        "banned": "Banned",
+        "notBanned": "Not Banned",
+        "banStatus": "Ban Status",
+        "banDetails": "Ban Details",
+        "banDetailsDescription": "Ban Details Description",
+        "banReason": "Ban Reason",
+        "banExpires": "Ban Expires",
+        "noReason": "No Reason",
+        "banUserConfirm": "Are you sure you want to ban this user?",
+        "banUserSuccess": "User banned successfully",
+        "banUserError": "Failed to ban user",
+        "banUserDescription": "Please enter the ban reason and ban duration",
+        "unbanUserConfirm": "Are you sure you want to unban this user?",
+        "unbanUserSuccess": "User unbanned successfully",
+        "unbanUserError": "Failed to unban user",
+        "permanentBan": "Permanent Ban",
+        "banDuration": "Ban Duration",
+        "durationInDays": "Days",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "reasonRequired": "Please enter the ban reason",
+        "invalidBanDuration": "Please enter a valid ban duration (greater than or equal to 1 day)"
+      }
+    },
+    "R2Management": {
+      "title": "R2 Resource Management",
+      "upload": "Upload",
+      "manage": "Manage",
+      "columns": {
+        "key": "Filename",
+        "size": "Size",
+        "uploaded": "Upload Time",
+        "mimeType": "Mime Type"
+      },
+      "copyUrl": "Copy Url",
+      "download": "Download",
+      "delete": "Delete",
+      "openMenu": "Open Menu",
+      "urlCopied": "Url copied to clipboard",
+      "downloadStarted": "Download started",
+      "deleteSuccess": "File deleted",
+      "deleteFailed": "Failed to delete file"
+    },
+    "r2Management": {
+      "upload": "Upload"
+    }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "Choose the most suitable solution for your business needs and can be upgraded at any time",
+    "free": {
+      "name": "Free",
+      "per": "Every user",
+      "getStarted": "Start learning",
+      "videoTutorial": "Video tutorial",
+      "docs": "Read the website documentation"
+    },
+    "pro": {
+      "everythingInFree": "Every In Free",
+      "name": "Pro",
+      "per": "Every user",
+      "getStarted": "Start building",
+      "everythingInPro": "Features in the subscription version:",
+      "sourceCode": "Project source code",
+      "group": "Paid Groups",
+      "support": "After-sales support (Q&A)",
+      "update": "Continuous update"
+    },
+    "error": "Failed to get payment link"
+  },
+  "integrations": {
+    "title": "Using the most advanced technology stack",
+    "description": "Connect seamlessly with popular platforms and services to enhance your workflow.",
+    "learnMore": "Learn More",
+    "nextjs": "Next.js is a React Framework for building full-stack web applications",
+    "react": "React is a JavaScript library for building user interfaces",
+    "tailwind": "Tailwind CSS is a CSS framework for building modern websites",
+    "shadcn": "shadcn/ui is a component library for building modern websites",
+    "better-auth": "better-auth is an authentication system for building modern websites",
+    "postgresql": "postgresql is an open source relational database management system"
+  },
+  "features": {
+    "title": "Built to cover your needs",
+    "description": "Libero sapiente aliquam quibusdam aspernatur, praesentium iusto repellendus.",
+    "customizable": "Customizable",
+    "youHaveFullControl": "You have full control",
+    "poweredByAI": "Powered By AI",
+    "customizableDescription": "Extensive customization options, allowing you to tailor every aspect to meet your specific needs.",
+    "youHaveFullControlDescription": "From design elements to functionality, you have complete control to create a unique and personalized experience.",
+    "poweredByAIDescription": "Elements to functionality, you have complete control to create a unique experience."
+  },
+  "paymentSuccess": {
+    "success": "Payment successfully",
+    "thanks": "Thank you for your support",
+    "explore": "Go and explore"
+  },
+  "user": {
+    "title": "Profile",
+    "billing": "Billing",
+    "account": "Account",
+    "pleaseLogin": "Please login first",
+    "profile": {
+      "admin": "Administrator",
+      "registeredAt": "Registered at {date}",
+      "banned": "Account is banned",
+      "banReason": "Ban reason: {reason}",
+      "banExpires": "Ban expires: {date}"
+    },
+    "billingPage": {
+      "billId": "Bill ID",
+      "productId": "Product ID",
+      "createdAt": "Created At",
+      "actions": "Actions",
+      "customerPortal": "Customer Portal"
+    }
+  },
+  "components": {
+    "dataTable": {
+      "noData": "No data",
+      "page": "Page {page} of {total}",
+      "previousPage": "Previous",
+      "nextPage": "Next"
+    }
+  },
+  "docs": {
+    "proAccess": {
+      "title": "Purchase Required",
+      "description": "This is premium content, please purchase to view",
+      "content": "After purchase, you will get full access to the documentation, including all premium content and tutorials.",
+      "buyButton": "Go to Purchase"
+    }
+  },
+  "Playground": {
+    "underConstruction": "Under Construction",
+    "comingSoon": "We are working hard on this feature. It will be available soon!",
+    "backToHome": "Back to Home"
+  }
+}

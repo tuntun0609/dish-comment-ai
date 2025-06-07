@@ -1,0 +1,4 @@
+:global(.light) .fd {
+  --color-fd-secondary: white;
+  --color-fd-card: white;
+}

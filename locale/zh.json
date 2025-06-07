@@ -1,0 +1,217 @@
+{
+  "Header": {
+    "docs": "文档",
+    "chat": "提问"
+  },
+  "HomePage": {
+    "light": "明亮",
+    "dark": "暗色",
+    "system": "跟随系统"
+  },
+  "LocaleSwitch": {
+    "locale": "{locale, select, zh {中文} en {English} other {Unknown}}"
+  },
+  "Hero": {
+    "getStarted": "去提问",
+    "toPlayground": "去探索",
+    "announcement": "😃 Enjoy yourself",
+    "title": "Dish Comment AI",
+    "description": "为了免费小吃需要点评？用我生成就可以了"
+  },
+  "LoginCard": {
+    "welcome": "欢迎回来",
+    "welcomeDesc": "请选择登录方式继续",
+    "google": "使用Google账号登录",
+    "github": "使用Github账号登录",
+    "agree": "登录即表示同意我们的服务条款和隐私政策"
+  },
+  "footer": {
+    "slogan": "使用最先进的技术构建你的SaaS应用",
+    "copyright": "© {year} Easy Saas Next 版权所有",
+    "privacyPolicy": "隐私政策",
+    "docs": "文档",
+    "about": "关于",
+    "features": "功能",
+    "pricing": "定价",
+    "contact": "联系",
+    "terms": "服务条款",
+    "legal": "法律",
+    "license": "许可证",
+    "security": "安全",
+    "product": "产品",
+    "allRightsReserved": "版权所有"
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "以下是一些常见问题的解答",
+    "questions": [
+      {
+        "question": "什么是Easy SaaS Next?",
+        "answer": "Easy SaaS Next是一个基于Nextjs的SaaS应用框架，可以帮助开发者快速构建SaaS应用。"
+      },
+      {
+        "question": "购买后可以退款吗?",
+        "answer": "由于 Easy SaaS Next 属于虚拟产品，所以不支持退款。请谨慎购买。"
+      },
+      {
+        "question": "购买后会有技术支持吗?",
+        "answer": "Easy SaaS Next 提供技术支持，您可以通过邮件联系我们，或加入付费群组获取技术支持。但由于精力有限，无法提供免费一对一技术支持，请谅解。"
+      },
+      {
+        "question": "我是否适合使用Easy SaaS Next?",
+        "answer": "如果您没有编程基础，建议您先学习一些前置的知识（在文档中即可查看到所需前置知识），或者直接找我定制。如果您有足够的编程基础，那么Easy SaaS Next 可以帮助您快速构建您的SaaS应用。"
+      },
+      {
+        "question": "视频教程是免费的吗?",
+        "answer": "当然！视频教程是免费的，您可以在视频教程中学习如何使用Easy SaaS Next，并根据视频教程中的内容进行实践，构建您的SaaS应用。如果您觉得视频教程有帮助或想直接使用 Easy SaaS Next 的源码来构建您的SaaS应用，可以直接购买付费版。"
+      },
+      {
+        "question": "视频教程和付费版有什么区别?",
+        "answer": "视频教程是免费的，其中包含了一些关键的代码讲解和实践，但不包括全部的源代码，所以您不可以从教程中获取到完整的源码。付费版则包含全部的源码，您可以获取到完整的源码，并可以获得技术支持。"
+      },
+      {
+        "question": "模板会持续更新吗?",
+        "answer": "会的，我会持续更新模板，并提供技术支持。"
+      },
+      {
+        "question": "我可以使用 AI 来改造这个模板吗?",
+        "answer": "可以的，因为 Easy SaaS Next 所使用的技术都是开源并且对 AI 友好的，所以您可以完全使用 AI 来改造这个模板。"
+      }
+    ]
+  },
+  "blog": {
+    "toc": "目录",
+    "secondUnit": "秒",
+    "minuteUnit": "分钟",
+    "author": "作者",
+    "date": "日期",
+    "all": "全部",
+    "title": "博客"
+  },
+  "Admin": {
+    "title": "管理后台",
+    "UsersManagement": {
+      "title": "用户管理",
+      "columns": {
+        "name": "用户名",
+        "email": "邮箱",
+        "emailVerified": "邮箱验证",
+        "createdAt": "创建时间",
+        "verified": "已验证",
+        "unverified": "未验证",
+        "banUser": "封禁用户",
+        "unBanUser": "解封用户",
+        "admin": "管理员",
+        "banned": "已封禁",
+        "notBanned": "未封禁",
+        "banStatus": "封禁状态",
+        "banDetails": "封禁详情",
+        "banDetailsDescription": "封禁详情",
+        "banReason": "封禁原因",
+        "banExpires": "封禁到期时间",
+        "noReason": "无",
+        "banUserConfirm": "确定封禁该用户吗？",
+        "banUserSuccess": "用户已封禁",
+        "banUserError": "封禁失败",
+        "banUserDescription": "请输入封禁原因和封禁时长",
+        "unbanUserConfirm": "确定解封该用户吗？",
+        "unbanUserSuccess": "用户已解封",
+        "unbanUserError": "解封失败",
+        "permanentBan": "永久封禁",
+        "banDuration": "封禁时长",
+        "durationInDays": "天数",
+        "cancel": "取消",
+        "confirm": "确认",
+        "reasonRequired": "请输入封禁原因",
+        "invalidBanDuration": "请输入有效的封禁时长（大于等于1天）"
+      }
+    },
+    "R2Management": {
+      "title": "R2 资源管理",
+      "upload": "上传",
+      "manage": "管理",
+      "columns": {
+        "key": "文件名",
+        "size": "文件大小",
+        "uploaded": "上传时间",
+        "mimeType": "文件类型"
+      },
+      "copyUrl": "复制链接",
+      "download": "下载",
+      "delete": "删除",
+      "openMenu": "打开菜单",
+      "urlCopied": "链接已复制到剪贴板",
+      "downloadStarted": "开始下载",
+      "deleteSuccess": "文件已删除",
+      "deleteFailed": "删除失败"
+    },
+    "r2Management": {
+      "upload": "上传"
+    }
+  },
+  "pricing": {
+    "title": "订阅计划",
+    "description": "选择最适合您业务需求的方案，随时可以升级",
+    "free": {
+      "name": "免费",
+      "per": "每位用户",
+      "getStarted": "开始学习",
+      "videoTutorial": "视频教程",
+      "docs": "查阅网站文档"
+    },
+    "pro": {
+      "everythingInFree": "免费计划的所有内容",
+      "name": "付费版",
+      "per": "每位用户",
+      "getStarted": "开始构建",
+      "everythingInPro": " 订阅版中的功能:",
+      "sourceCode": "项目源码",
+      "group": "付费群组",
+      "support": "售后支持(答疑)",
+      "update": "持续更新"
+    },
+    "error": "获取支付链接失败"
+  },
+  "integrations": {
+    "title": "使用最先进的技术栈",
+    "description": "与流行的平台和服务无缝连接以增强您的工作流程。",
+    "learnMore": "获取更多信息",
+    "nextjs": "Next.js 是一个用于构建全栈 Web 应用的React 框架",
+    "react": "React 是一个用于构建用户界面的 JavaScript 库",
+    "tailwind": "Tailwind CSS 是一个用于快速构建现代网站的 CSS 框架",
+    "shadcn": "shadcn/ui 是一个用于快速构建现代网站的组件库",
+    "better-auth": "better-auth 是一个用于快速构建现代网站的认证系统",
+    "postgresql": "postgresql 是一个开源的关系型数据库管理系统"
+  },
+  "features": {
+    "title": "覆盖您的需求",
+    "description": "可以轻松构建您的SaaS应用",
+    "customizable": "可定制",
+    "youHaveFullControl": "您拥有完全控制权",
+    "poweredByAI": "由AI驱动",
+    "customizableDescription": "广泛的自定义选项，允许您根据您的特定需求定制每个方面。",
+    "youHaveFullControlDescription": "从设计元素到功能，您拥有完全控制权，以创建独特且个性化的体验。",
+    "poweredByAIDescription": "元素到功能，您拥有完全控制权，以创建独特且个性化的体验。"
+  },
+  "components": {
+    "dataTable": {
+      "noData": "暂无数据",
+      "page": "第 {page} 页，共 {total} 页",
+      "previousPage": "上一页",
+      "nextPage": "下一页"
+    }
+  },
+  "docs": {
+    "proAccess": {
+      "title": "需要购买才能访问",
+      "description": "这是一个付费内容，请先购买后再查看",
+      "content": "购买后您将获得完整的文档访问权限，包括所有高级内容和教程。",
+      "buyButton": "前往购买"
+    }
+  },
+  "Playground": {
+    "underConstruction": "页面建设中",
+    "comingSoon": "我们正在努力开发这个功能，很快就会与您见面！",
+    "backToHome": "返回首页"
+  }
+}

@@ -1,0 +1,9 @@
+/* 防止 Select 打开时移除滚动条 */
+body[style*='overflow: hidden'] {
+  overflow: auto !important;
+}
+
+/* 确保下拉内容显示在其他元素之上 */
+.radix-select-content {
+  z-index: 1000;
+}
