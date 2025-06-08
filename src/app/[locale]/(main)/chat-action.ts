@@ -9,17 +9,17 @@ const openai = new OpenAI({
   },
 })
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const models = ['qwen/qwen3-30b-a3b:free', 'qwen/qwen3-32b:free', 'deepseek/deepseek-chat-v3-0324']
 
 export async function generateComment(question: string, maxTokens: number, style: string) {
-  const completion = await openai.chat.completions.create({
-    model: 'deepseek/deepseek-chat-v3-0324:free',
-    // @ts-ignore
-    models,
-    messages: [
-      {
-        role: 'system',
-        content: `
+  try {
+    const completion = await openai.chat.completions.create({
+      model: 'deepseek/deepseek-chat-v3-0324:free',
+      messages: [
+        {
+          role: 'system',
+          content: `
 				你是一个餐厅点评生成器，根据用户的情况生成非常像真人的点评。
 				输出要求：
 				1. 直接输出纯文字
@@ -31,13 +31,16 @@ export async function generateComment(question: string, maxTokens: number, style
 				7. 点评内容要符合用户的情况，不要过于夸张
 				8. 如果用户有一些要求，比如口味、环境、服务等，需要根据用户的要求生成点评
 				`,
-      },
-      {
-        role: 'user',
-        content: question,
-      },
-    ],
-  })
-
-  return completion.choices[0].message.content
+        },
+        {
+          role: 'user',
+          content: question,
+        },
+      ],
+    })
+    return completion.choices[0].message.content
+  } catch (error) {
+    console.error(error)
+    return '生成失败，请稍后再试'
+  }
 }

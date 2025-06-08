@@ -60,14 +60,6 @@ export default function AskTextarea() {
   return (
     <div id="ask-textarea" className="flex flex-col items-center justify-center p-6">
       <div className="mx-auto w-full max-w-4xl">
-        {/* 主标题 */}
-        {/* <div className="mb-12 text-center">
-          <h1 className="mb-4 text-3xl font-semibold text-gray-800 md:text-4xl lg:text-5xl">
-            你好，我是魔镜，有什么可以帮你的？
-          </h1>
-          <p className="text-lg text-gray-600">我将尽力为您提供准确和有用的回答</p>
-        </div> */}
-
         {/* 输入框区域 */}
         <div className="relative mx-auto max-w-3xl">
           <div className="rounded-2xl border border-gray-200/80 bg-white/90 shadow-lg backdrop-blur-sm transition-all duration-300 hover:border-gray-300/80 hover:shadow-xl">
