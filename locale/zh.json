@@ -14,8 +14,8 @@
   "Hero": {
     "getStarted": "去提问",
     "toPlayground": "去探索",
-    "announcement": "😃 Enjoy yourself",
-    "title": "Dish Comment AI",
+    "announcement": "😃 玩得开心",
+    "title": "餐厅点评 AI",
     "description": "为了免费小吃需要点评？用我生成就可以了"
   },
   "LoginCard": {
@@ -213,5 +213,19 @@
     "underConstruction": "页面建设中",
     "comingSoon": "我们正在努力开发这个功能，很快就会与您见面！",
     "backToHome": "返回首页"
+  },
+  "AskTextarea": {
+    "placeholder": "请描述您吃了什么，以及您的感受...",
+    "wordLimit": "字",
+    "styles": {
+      "standard": "标准",
+      "cute": "可爱",
+      "cool": "冷酷",
+      "humor": "幽默"
+    },
+    "generateComment": "生成点评",
+    "enterKey": "Enter",
+    "shiftEnterKey": "Shift + Enter",
+    "keyboardHint": "按 <Kdb>Enter</Kdb> 发送消息，<Kdb>Shift + Enter</Kdb> 换行"
   }
 }

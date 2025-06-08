@@ -16,7 +16,7 @@ type ChangeFrequency =
   | undefined
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/pricing', '/login', '/about', '/blog', '/terms']
+  const staticPages = ['']
 
   const pagesSiteMap = staticPages.flatMap(page => {
     return routing.locales.map(locale => ({

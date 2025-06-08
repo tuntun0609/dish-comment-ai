@@ -3,6 +3,7 @@
 import type React from 'react'
 import { useState } from 'react'
 import { ArrowUp, Loader2, Type } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 
 import { ContentDisplay } from '@/components/content-display'
 import { Button } from '@/components/ui/button'
@@ -19,6 +20,7 @@ import { Textarea } from '@/components/ui/textarea'
 import { generateComment } from './chat-action'
 
 export default function AskTextarea() {
+  const t = useTranslations('AskTextarea')
   const [question, setQuestion] = useState('')
   const [loading, setLoading] = useState(false)
   const [wordLimit, setWordLimit] = useState(100)
@@ -26,10 +28,10 @@ export default function AskTextarea() {
   const [comment, setComment] = useState('')
 
   const styles = [
-    { value: '标准', label: '标准' },
-    { value: '可爱', label: '可爱' },
-    { value: '冷酷', label: '冷酷' },
-    { value: '幽默', label: '幽默' },
+    { value: '标准', label: t('styles.standard') },
+    { value: '可爱', label: t('styles.cute') },
+    { value: '冷酷', label: t('styles.cool') },
+    { value: '幽默', label: t('styles.humor') },
   ]
 
   const handleSubmit = async () => {
@@ -56,7 +58,7 @@ export default function AskTextarea() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center p-6">
+    <div id="ask-textarea" className="flex flex-col items-center justify-center p-6">
       <div className="mx-auto w-full max-w-4xl">
         {/* 主标题 */}
         {/* <div className="mb-12 text-center">
@@ -76,7 +78,7 @@ export default function AskTextarea() {
                   value={question}
                   onChange={e => setQuestion(e.target.value)}
                   onKeyDown={handleKeyDown}
-                  placeholder="请描述您吃了什么，以及您的感受..."
+                  placeholder={t('placeholder')}
                   className="max-h-[180px] min-h-[56px] resize-none border-none border-gray-200 bg-transparent p-2 text-lg leading-relaxed shadow-none transition-all duration-300 placeholder:text-gray-400 focus-visible:ring-0 focus-visible:ring-offset-0"
                   style={{
                     fontFamily:
@@ -101,7 +103,10 @@ export default function AskTextarea() {
                         className="w-full"
                       />
                     </div>
-                    <span className="text-sm text-gray-500">{wordLimit}字</span>
+                    <span className="text-sm text-gray-500">
+                      {wordLimit}&nbsp;
+                      {t('wordLimit')}
+                    </span>
                   </div>
 
                   <div className="flex items-center gap-2">
@@ -133,7 +138,7 @@ export default function AskTextarea() {
                     ) : (
                       <ArrowUp className="h-4.5 w-4.5 text-white" />
                     )}
-                    <span className="block sm:hidden">生成点评</span>
+                    <span className="block sm:hidden">{t('generateComment')}</span>
                   </Button>
                 </div>
               </div>
@@ -144,21 +149,15 @@ export default function AskTextarea() {
         {/* 底部提示文字 */}
         <div className="mt-8 hidden text-center sm:block">
           <p className="text-sm text-gray-500/80">
-            按 <kbd className="rounded border bg-gray-100 px-1.5 py-0.5 text-xs">Enter</kbd>{' '}
-            发送消息，
-            <kbd className="rounded border bg-gray-100 px-1.5 py-0.5 text-xs">
-              Shift + Enter
-            </kbd>{' '}
-            换行
+            {t.rich('keyboardHint', {
+              Kdb: (chunks: any) => (
+                <kbd className="rounded border bg-gray-100 px-1.5 py-0.5 text-xs">{chunks}</kbd>
+              ),
+            })}
           </p>
         </div>
 
-        {comment && (
-          <ContentDisplay
-            content={comment}
-            className="mt-4" // 可选的额外样式
-          />
-        )}
+        {comment && <ContentDisplay content={comment} className="mt-4" />}
       </div>
     </div>
   )

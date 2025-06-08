@@ -1,18 +1,18 @@
-import Image from 'next/image'
 import Link from 'next/link'
+import { useLocale } from 'next-intl'
+
+import Icon from './icon'
 
 export const Logo = () => {
+  const locale = useLocale()
   return (
     <Link
       aria-label="home"
-      style={{
-        fontFamily: 'var(--font-caveat)',
-      }}
-      className="flex items-center gap-2 text-2xl whitespace-nowrap text-purple-600 lg:mx-4"
+      className="text-primary flex items-center gap-2 text-2xl whitespace-nowrap lg:mx-4"
       href="/"
     >
-      <Image src="/logo.svg" alt="logo" width={32} height={32} />
-      Dish Comment AI
+      <Icon className="h-8 w-8" />
+      {locale === 'zh' ? '餐厅点评 AI' : 'Dish Comment AI'}
     </Link>
   )
 }

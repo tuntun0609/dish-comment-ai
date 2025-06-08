@@ -238,5 +238,19 @@
     "underConstruction": "Under Construction",
     "comingSoon": "We are working hard on this feature. It will be available soon!",
     "backToHome": "Back to Home"
+  },
+  "AskTextarea": {
+    "placeholder": "Please describe what you ate and how you feel...",
+    "wordLimit": "words",
+    "styles": {
+      "standard": "Standard",
+      "cute": "Cute",
+      "cool": "Cool",
+      "humor": "Humor"
+    },
+    "generateComment": "Generate Comment",
+    "enterKey": "Enter",
+    "shiftEnterKey": "Shift + Enter",
+    "keyboardHint": "Press <Kdb>Enter</Kdb> to send, <Kdb>Shift + Enter</Kdb> for new line"
   }
 }
